@@ -1,0 +1,12 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: base-cluster
+  annotations:
+    blueprints.cloud.google.com/title: "Base cluster"
+    cft.dev/base-version: "1"
+info:
+  description: Base cluster for deriving other clusters
+pipeline:
+  mutators:
+  validators:
