@@ -1,0 +1,26 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: aa
+  annotations:
+    blueprints.cloud.google.com/title: 'aa'
+    cft.dev/base-version: '1'
+    cft.dev/package-version: '1'
+    cft.dev/instance-version: '1'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /cluster-and-nodepool
+    ref: v1
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /cluster-and-nodepool
+    ref: cluster-and-nodepool/v1
+    commit: 4d4e3ce1e1086c6b79ab9ec29368b844eafb4b4c
+info:
+  description: aa
+pipeline: {}
