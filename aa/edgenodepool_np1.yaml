@@ -4,7 +4,7 @@ metadata: # kpt-merge: config-control/np1
   name: np1
   namespace: config-control
 spec:
-  Node Count: '6'
+  Node Count: '7'
   Node Location: us-central1-edge-den8
   Node Pool Location: us-central1
   Parent Cluster: edge-1
