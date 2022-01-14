@@ -1,0 +1,10 @@
+apiVersion: config.cloud.google.com/v1alpha1
+kind: EdgeNodePool
+metadata: # kpt-merge: config-control/np1
+  name: np1
+  namespace: config-control
+spec:
+  Node Count: '6'
+  Node Location: us-central1-edge-den8
+  Node Pool Location: us-central1
+  Parent Cluster: edge-1
