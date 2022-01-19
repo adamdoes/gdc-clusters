@@ -1,0 +1,26 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: demo-cluster
+  annotations:
+    blueprints.cloud.google.com/title: 'demo-cluster'
+    cft.dev/base-version: '1'
+    cft.dev/package-version: '1'
+    cft.dev/instance-version: '1'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /demo-cluster-and-nodepool
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /demo-cluster-and-nodepool
+    ref: main
+    commit: f99fa6e744f1f74cca3c36240bde233dc84577f2
+info:
+  description: demo-cluster
+pipeline: {}
