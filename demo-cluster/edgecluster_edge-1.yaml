@@ -6,7 +6,7 @@ metadata: # kpt-merge: config-control/edge-1
 spec:
   Authorization:
     Admin Users:
-      Username: someone@example.com
+      Username: adam@example.com
   Cluster Location: us-central1
   Networking:
     clusterIpv4CidrBlocks:
