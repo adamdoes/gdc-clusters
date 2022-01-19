@@ -1,7 +1,7 @@
 apiVersion: config.cloud.google.com/v1alpha1
 kind: EdgeCluster
-metadata: # kpt-merge: config-control/edge-1
-  name: edge-1
+metadata:
+  name: edge
   namespace: config-control
 spec:
   Authorization:
