@@ -7,4 +7,4 @@ spec:
   Node Location: us-central1-edge-den8
   Node Pool Location: us-central1
   Parent Cluster: edge-2
-  Node Count: '3'
+  Node Count: '1'
