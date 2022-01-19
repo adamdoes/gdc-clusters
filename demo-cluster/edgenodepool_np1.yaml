@@ -1,6 +1,6 @@
 apiVersion: config.cloud.google.com/v1alpha1
 kind: EdgeNodePool
-metadata:
+metadata: # kpt-merge: config-control/np1
   name: np1
   namespace: config-control
 spec:
