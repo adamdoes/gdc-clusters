@@ -1,0 +1,10 @@
+apiVersion: config.cloud.google.com/v1alpha1
+kind: EdgeNodePool
+metadata:
+  name: np2
+  namespace: config-control
+spec:
+  Node Location: us-central1-edge-den8
+  Node Pool Location: us-central1
+  Parent Cluster: edge-2
+  Node Count: '3'

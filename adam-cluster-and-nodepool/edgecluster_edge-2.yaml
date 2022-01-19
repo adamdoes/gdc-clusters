@@ -1,0 +1,15 @@
+apiVersion: config.cloud.google.com/v1alpha1
+kind: EdgeCluster
+metadata:
+  name: edge-2
+  namespace: config-control
+spec:
+  Authorization:
+    Admin Users:
+      Username: adamdoes@example.com
+  Cluster Location: us-central1
+  Networking:
+    clusterIpv4CidrBlocks:
+    - 10.97.0.0/17
+    servicesIpv4CidrBlocks:
+    - 10.0.1.0/21
