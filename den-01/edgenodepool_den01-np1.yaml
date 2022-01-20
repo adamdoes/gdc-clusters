@@ -1,10 +1,10 @@
 apiVersion: config.cloud.google.com/v1alpha1
 kind: EdgeNodePool
-metadata: # kpt-merge: config-control/small-site
-  name: small-site
+metadata:
+  name: den01-np1
   namespace: config-control
   labels:
     site-size: small
 spec:
   Node Count: '2'
-  Parent Cluster: small-site
+  Parent Cluster: den01
