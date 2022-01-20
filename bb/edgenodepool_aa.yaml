@@ -1,0 +1,10 @@
+apiVersion: config.cloud.google.com/v1alpha1
+kind: EdgeNodePool
+metadata: # kpt-merge: config-control/aa
+  name: aa
+  namespace: config-control
+spec:
+  parentCluster: aa
+  nodePoolLocation: us-central1
+  nodeLocation: us-central1-edge-randolphc-0
+  nodeCount: 1
