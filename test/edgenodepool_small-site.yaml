@@ -3,3 +3,8 @@ kind: EdgeNodePool
 metadata: # kpt-merge: config-control/small-site
   name: small-site
   namespace: config-control
+spec:
+  Node Count: '1'
+  Node Location: us-central1-edge-randolphc-0
+  Node Pool Location: us-central1
+  Parent Cluster: edge-1

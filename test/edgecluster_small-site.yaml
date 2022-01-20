@@ -1,5 +1,0 @@
-apiVersion: config.cloud.google.com/v1alpha1
-kind: EdgeCluster
-metadata: # kpt-merge: config-control/small-site
-  name: small-site
-  namespace: config-control
