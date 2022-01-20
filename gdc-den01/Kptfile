@@ -22,5 +22,5 @@ upstreamLock:
     ref: small-site/v2
     commit: bb16abdccce1dc88a9ee7b914ce52285141c5861
 info:
-  description: Small cluster
+  description: smallcluster
 pipeline: {}
