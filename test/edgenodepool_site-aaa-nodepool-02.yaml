@@ -1,0 +1,7 @@
+apiVersion: config.cloud.google.com/v1alpha1
+kind: EdgeNodePool
+metadata: # kpt-merge: config-control/site-AAA-nodepool-02
+  name: site-AAA-nodepool-02
+  namespace: config-control
+  labels:
+    dpdk-enabled: 'true'
