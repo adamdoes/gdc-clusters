@@ -5,22 +5,24 @@ metadata:
   annotations:
     blueprints.cloud.google.com/title: 'demo-cluster'
     cft.dev/base-version: '1'
-    cft.dev/package-version: '1'
-    cft.dev/instance-version: '2'
+    cft.dev/instance-version: '3'
+    cft.dev/package-version: '2'
+    internal.config.kubernetes.io/index: '0'
+    internal.config.kubernetes.io/path: 'Kptfile'
 upstream:
   type: git
   git:
-    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
     directory: /demo-cluster-and-nodepool
-    ref: main
+    ref: v2
   updateStrategy: resource-merge
 upstreamLock:
   type: git
   git:
-    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
     directory: /demo-cluster-and-nodepool
-    ref: main
-    commit: 2056ec52e9028311a7237e694f8bcc5065a72415
+    ref: demo-cluster-and-nodepool/v2
+    commit: bf932f3b8d9d2e2d34c3bdf9264c850fd993b673
 info:
   description: demo-cluster
 pipeline: {}
