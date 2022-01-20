@@ -1,0 +1,26 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: gdc-den01
+  annotations:
+    blueprints.cloud.google.com/title: 'GDC Cluster - DEN01'
+    cft.dev/base-version: '1'
+    cft.dev/package-version: '1'
+    cft.dev/instance-version: '1'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /small-site
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /small-site
+    ref: main
+    commit: dd7ac3fc0d9d75fae6538db832110aad7eb8cd10
+info:
+  description: Small cluster
+pipeline: {}
