@@ -1,0 +1,12 @@
+apiVersion: config.cloud.google.com/v1alpha1
+kind: EdgeNodePool
+metadata:
+  name: site-aaa-nodepool-02
+  namespace: config-control
+  labels:
+    dpdk-enabled: 'true'
+spec:
+  Node Count: '1'
+  Node Location: us-central1-edge-randolphc-0
+  Node Pool Location: us-central1
+  Parent Cluster: site-aaa
