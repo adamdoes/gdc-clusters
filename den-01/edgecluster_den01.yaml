@@ -1,0 +1,5 @@
+apiVersion: config.cloud.google.com/v1alpha1
+kind: EdgeCluster
+metadata:
+  name: den01
+  namespace: config-control

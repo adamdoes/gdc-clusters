@@ -1,0 +1,26 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: den-01
+  annotations:
+    blueprints.cloud.google.com/title: 'Denver site 1'
+    cft.dev/base-version: '1'
+    cft.dev/package-version: '1'
+    cft.dev/instance-version: '1'
+upstream:
+  type: git
+  git:
+    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    directory: /small-site
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    directory: /small-site
+    ref: main
+    commit: aae60b09b8f8e3c8c414e51f32831948bb251a76
+info:
+  description: Small site
+pipeline: {}
