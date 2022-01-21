@@ -3,3 +3,8 @@ kind: EdgeNodePool
 metadata: # kpt-merge: config-control/aa
   name: aa
   namespace: config-control
+spec:
+  nodeLocation: us-central1-edge-randolphc-0
+  nodeCount: 1
+  nodePoolLocation: us-central1
+  parentCluster: aa
