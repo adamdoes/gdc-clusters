@@ -6,10 +6,10 @@ metadata: # kpt-merge: config-control/aa
 spec:
   authorization:
     adminUsers:
-      username: admin@example.com
+      username: adamdoes@google.com
   clusterLocation: us-central1
   networking:
     clusterIpv4CidrBlocks:
-    - 10.96.0.0/17
+    - 10.97.0.0/17
     servicesIpv4CidrBlocks:
-    - 10.0.0.0/21
+    - 10.1.0.0/21
