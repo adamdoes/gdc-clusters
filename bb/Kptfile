@@ -5,24 +5,24 @@ metadata:
   annotations:
     blueprints.cloud.google.com/title: 'bb'
     cft.dev/base-version: '1'
-    cft.dev/package-version: '1'
+    cft.dev/instance-version: '3'
+    cft.dev/package-version: '2'
     internal.config.kubernetes.io/index: '0'
     internal.config.kubernetes.io/path: 'Kptfile'
-    cft.dev/instance-version: '2'
 upstream:
   type: git
   git:
-    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
     directory: /aa
-    ref: main
+    ref: v2
   updateStrategy: resource-merge
 upstreamLock:
   type: git
   git:
-    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
     directory: /aa
-    ref: main
-    commit: 0ff32718f127c323d3bacb01ee1c22f331771bb9
+    ref: aa/v2
+    commit: 036ff44bd6c2b4902419f5cb931cc6ba6c3d9358
 info:
   description: bb
 pipeline: {}
