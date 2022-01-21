@@ -7,4 +7,4 @@ spec:
   parentCluster: aa
   nodePoolLocation: us-central1
   nodeLocation: us-central1-edge-randolphc-0
-  nodeCount: 1
+  nodeCount: 2
