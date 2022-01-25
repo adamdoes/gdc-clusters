@@ -5,22 +5,22 @@ metadata:
   annotations:
     blueprints.cloud.google.com/title: 'GDC Far Edge Cluster - Denver 01'
     cft.dev/base-version: '1'
-    cft.dev/package-version: '1'
-    cft.dev/instance-version: '2'
+    cft.dev/instance-version: '3'
+    cft.dev/package-version: '3'
 upstream:
   type: git
   git:
-    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
     directory: /far-edge-site
-    ref: main
+    ref: v3
   updateStrategy: resource-merge
 upstreamLock:
   type: git
   git:
-    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
     directory: /far-edge-site
-    ref: main
-    commit: f2bd1d1fdbe8822712f21f1ef6c2e0ad22d8a91c
+    ref: far-edge-site/v3
+    commit: 2d80af92dba52377cf55bfdbed7309a372654a32
 info:
   description: Small site in Denver
 pipeline: {}
