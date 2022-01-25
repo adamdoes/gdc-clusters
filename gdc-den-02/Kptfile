@@ -1,0 +1,26 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: gdc-den-02
+  annotations:
+    blueprints.cloud.google.com/title: 'GDC Edge Cluster Denver 2'
+    cft.dev/base-version: '1'
+    cft.dev/package-version: '4'
+    cft.dev/instance-version: '1'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /far-edge-site
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/adamdoes/gdc-cluster-blueprints
+    directory: /far-edge-site
+    ref: main
+    commit: 5183b6b9d8ff46e1c97eb5286df318c9186f2078
+info:
+  description: Second cluster in Denver rack
+pipeline: {}

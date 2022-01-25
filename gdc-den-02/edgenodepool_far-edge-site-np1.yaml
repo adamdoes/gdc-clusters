@@ -1,0 +1,10 @@
+apiVersion: config.cloud.google.com/v1alpha1
+kind: EdgeNodePool
+metadata: # kpt-merge: config-control/far-edge-site-np1
+  name: far-edge-site-np1
+  namespace: config-control
+  labels:
+    site-type: far-edge
+spec:
+  nodeCount: 1
+  parentCluster: far-edge-site
