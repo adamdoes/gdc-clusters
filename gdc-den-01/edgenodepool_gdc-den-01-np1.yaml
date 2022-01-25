@@ -1,8 +1,8 @@
 apiVersion: config.cloud.google.com/v1alpha1
 kind: EdgeNodePool
-metadata: # kpt-merge: config-control/far-edge-site-np1
-  name: far-edge-site-np1
+metadata:
+  name: gdc-den-01-np1
   namespace: config-control
 spec:
   nodeCount: 1
-  parentCluster: far-edge-site
+  parentCluster: gdc-den-01
