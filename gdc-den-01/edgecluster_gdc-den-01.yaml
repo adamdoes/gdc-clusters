@@ -1,0 +1,7 @@
+apiVersion: config.cloud.google.com/v1alpha1
+kind: EdgeCluster
+metadata:
+  name: gdc-den-01
+  namespace: config-control
+  labels:
+    site-type: far-edge
