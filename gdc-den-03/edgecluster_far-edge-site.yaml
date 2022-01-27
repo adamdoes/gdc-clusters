@@ -1,0 +1,9 @@
+apiVersion: config.cloud.google.com/v1alpha1
+kind: EdgeCluster
+metadata: # kpt-merge: config-control/far-edge-site
+  name: far-edge-site
+  namespace: config-control
+  labels:
+    site-type: far-edge
+  annotations:
+    dpdk-enabled: 'true'
