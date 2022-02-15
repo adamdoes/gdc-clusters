@@ -1,0 +1,26 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: gdc-den-04
+  annotations:
+    blueprints.cloud.google.com/title: 'Denver 4'
+    cft.dev/base-version: '1'
+    cft.dev/package-version: '1'
+    cft.dev/instance-version: '1'
+upstream:
+  type: git
+  git:
+    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    directory: /near-edge-site
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: 'https://github.com/adamdoes/gdc-cluster-blueprints'
+    directory: /near-edge-site
+    ref: main
+    commit: 84d4d6a07db51517208e237a4804252cc8a7d0ba
+info:
+  description: Fourth cluster
+pipeline: {}

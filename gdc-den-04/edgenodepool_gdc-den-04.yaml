@@ -1,0 +1,7 @@
+apiVersion: config.cloud.google.com/v1alpha1
+kind: EdgeNodePool
+metadata:
+  name: gdc-den-04
+  namespace: config-control
+spec:
+  nodeCount: 4
