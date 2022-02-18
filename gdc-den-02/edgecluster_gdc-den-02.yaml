@@ -1,6 +1,6 @@
 apiVersion: config.cloud.google.com/v1alpha1
 kind: EdgeCluster
-metadata:
+metadata: # kpt-merge: config-control/gdc-den-02
   name: gdc-den-02
   namespace: config-control
   labels:
